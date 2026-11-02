@@ -1,0 +1,10 @@
+{
+  "name": "alm-liber",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "HEMA - A customizable digital conversational entity",
+  "scripts": {
+    "start": "node src/server.js"
+  }
+}
