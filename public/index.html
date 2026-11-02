@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07111f">
+  <title>HEMA — ALM Liber</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <main class="app">
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">H</span>
+        <div>
+          <h1>HEMA</h1>
+          <small>ALM Liber</small>
+        </div>
+      </div>
+      <button id="languageBtn" class="language-btn">English</button>
+    </header>
+
+    <section class="welcome">
+      <div class="avatar" id="avatar">
+        <img class="hema-avatar-image" src="/assets/avatar/hema.png" alt="HEMA">
+        <span class="online-dot"></span>
+      </div>
+      <h2 id="welcomeTitle">مرحباً، أنا HEMA</h2>
+      <p id="welcomeText">كيانك الرقمي للتواصل والمعرفة والحوار.</p>
+      <button id="openChat" class="primary-btn">ابدأ المحادثة</button>
+    </section>
+
+    <section id="chatPanel" class="chat-panel hidden">
+      <div class="chat-header">
+        <strong>HEMA</strong>
+        <button id="closeChat" aria-label="إغلاق">×</button>
+      </div>
+      <div id="messages" class="messages">
+        <div class="message entity-message" id="firstMessage">
+          أهلاً بك! يسعدني التحدث معك.
+        </div>
+      </div>
+      <form id="chatForm" class="chat-input">
+        <button type="button" id="micBtn" title="الصوت">🎙</button>
+        <input id="messageInput" placeholder="اكتب رسالتك هنا..." autocomplete="off">
+        <button type="submit" class="send-btn">➤</button>
+      </form>
+    </section>
+
+    <button id="floatingAvatar" class="floating-avatar" title="HEMA">
+      <img src="/assets/avatar/hema.png" alt="HEMA">
+      <span class="online-dot"></span>
+    </button>
+
+    <footer>ALM Liber · HEMA v0.1.0</footer>
+  </main>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>
